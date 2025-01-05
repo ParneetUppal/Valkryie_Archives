@@ -1,0 +1,4 @@
+equipment_name,type,quantity ,Equipment_status ,officer_name,rank ,role,,operation_name,operation_type,start_date,end_date,Operation_status,outcome
+Assault Rifles ,Weapon ,10,Assigned,Sant Jarnail Singh Bhindrawale ,Saint Warrior ,Defender of Faith ,,Operation Battle Of Amritsar,Defensive,6/3/1984,6/6/1984,Complete,Massive Casualities 
+Fortifications ,Defensive Gears ,1,Assigned,Shabeg Singh,Major General ,Tactical Strategist  ,,Operation Retribution ,Covert ,10/31/1984,10/31/1984,Complete,Assassination Successful 
+Service Revolver ,Weapon ,1,Assigned,Beant Singh ,Bodyguard,Executioner Of Justice,,Khalistan Movement ,Political ,11/1/1984,12/31/1984,Derailed,Mislead

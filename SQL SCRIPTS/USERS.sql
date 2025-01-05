@@ -1,0 +1,46 @@
+/*
+DATABASE NAME: VALKRYIE ARCHIVES 
+CREATED BY: PARNEET KAUR UPPAL
+STUDENT ID: 0395181
+*/
+
+USE ValkryieArchives;
+
+--LOGINS FOR USERS--
+
+CREATE LOGIN JamesGreer WITH PASSWORD = 'Paradise', DEFAULT_DATABASE = ValkryieArchives, CHECK_POLICY = OFF;
+CREATE LOGIN KateLaswell WITH PASSWORD = 'Paradise', DEFAULT_DATABASE = ValkryieArchives, CHECK_POLICY = OFF;
+CREATE LOGIN ElizabethWright WITH PASSWORD = 'Paradise', DEFAULT_DATABASE = ValkryieArchives, CHECK_POLICY = OFF;
+
+
+--Users--
+
+CREATE USER JamesGreer FOR LOGIN JamesGreer;
+CREATE USER KateLaswell FOR LOGIN KateLaswell;
+CREATE USER ElizabethWright FOR LOGIN ElizabethWright;
+
+
+CREATE ROLE DIRECTOR_CIA;
+
+GRANT SELECT, INSERT, DELETE, UPDATE ON Personnel TO DIRECTOR_CIA;
+GRANT SELECT, INSERT, DELETE, UPDATE ON Equipment TO DIRECTOR_CIA;
+GRANT SELECT, INSERT, DELETE, UPDATE ON Operations TO DIRECTOR_CIA;
+GRANT SELECT, INSERT, DELETE, UPDATE ON Operational_Personnel TO DIRECTOR_CIA;
+
+ALTER ROLE DIRECTOR_CIA ADD MEMBER JamesGreer;
+ALTER ROLE DIRECTOR_CIA ADD MEMBER KateLaswell;
+ALTER ROLE DIRECTOR_CIA ADD MEMBER ElizabethWright;
+
+
+--TEST Commands 
+--EXECUTE AS USER = 'JamesGreer';
+
+--INSERT INTO Operations (personnel_id, operation_name, operation_type, start_date, end_date, status, outcome) 
+--VALUES
+--( 2, 'Operation Mess IT Up', 'Infiltration', '2024-11-08', '2024-11-10', 'Complete','Success');
+
+
+--REVERT;
+
+--SELECT SUSER_NAME() AS CurrentUser;
+EXECUTE AS USER = 'JamesGrer';
