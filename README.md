@@ -1,7 +1,5 @@
 # Valkyrie Archives - Military Archival Database
 
-# Developer Name - Parneet Kaur Uppal
-
 ## Project Description
 
 The **Valkyrie Archives** is a fictional military archival database designed to manage and analyze data related to military missions, resources, and personnel. The system is structured to capture the intricate workings of a military organization by managing five key tables:
@@ -61,4 +59,7 @@ The database design includes relationships between the following entities:
 ![ERD Diagram](ERD/DB%20ERD.drawio.png)
 
 ---
+
+Developer Name - Parneet Kaur Uppal
+
 
